@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "BASE｜ホームページ制作・SEOライティング・AI活用支援",
   description:
-    "HP制作、SEOライティング、EC運営サポート、AI活用支援まで。アパレル販売とEC運営の現場を知るBASEが、小規模ブランドや古着屋のWeb改善に伴走します。",
+    "HP制作、SEOライティング、EC運営サポート、AI活用支援まで一貫して支援。アパレル販売とEC運営の現場を知るBASEが、小規模ブランドや古着屋のWeb改善に伴走します。",
 };
 
 export default function RootLayout({
