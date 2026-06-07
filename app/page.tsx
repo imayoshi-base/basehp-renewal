@@ -51,9 +51,17 @@ export default function Home() {
     <main className="min-h-screen bg-neutral-950 text-white">
       <section className="px-6 py-24 sm:px-10 lg:px-20">
         <div className="mx-auto max-w-6xl">
-          <p className="mb-8 text-xs tracking-[0.45em] text-neutral-500 sm:text-sm">
-            BASE / FASHION WEB SUPPORT
-          </p>
+          <div className="mb-8 flex items-center gap-4">
+  <img
+    src="/logo.png"
+    alt="BASE"
+    className="h-16 w-auto rounded-sm"
+  />
+
+  <span className="text-xs tracking-[0.45em] text-neutral-500 sm:text-sm">
+    FASHION WEB SUPPORT
+  </span>
+</div>
 
           <h1 className="max-w-5xl text-5xl font-semibold leading-[1.15] tracking-tight sm:text-6xl">
             いい商品が、
