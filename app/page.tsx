@@ -64,7 +64,7 @@ export default function Home() {
           <p className="mt-8 max-w-3xl text-base leading-8 text-neutral-300 sm:text-lg">
             HP制作、SEOライティング、EC運営サポート、AI活用支援までを一貫して支援。
             <br className="hidden sm:block" />
-                "HP制作、SEOライティング、EC運営サポート、AI活用支援まで一貫して支援。アパレル販売とEC運営の現場を知るBASEが、小規模ブランドや古着屋のWeb改善に伴走します。",
+                アパレル販売とEC運営の現場を知るBASEが、小規模ブランドや古着屋のWeb改善に伴走します。
 
           </p>
 
