@@ -1,4 +1,4 @@
-const services = [
+  const services = [
   {
     title: "HP制作",
     text: "見た目だけではなく、誰に何を伝え、どこから相談につなげるかまで整理したWebサイトを制作します。",
@@ -49,25 +49,29 @@ const faqs = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-neutral-950 text-white">
-      <section className="px-6 py-20 sm:px-10 sm:py-24 lg:px-20 lg:py-28">
+      <section className="px-6 py-24 sm:px-10 lg:px-20">
         <div className="mx-auto max-w-6xl">
           <p className="mb-8 text-xs tracking-[0.45em] text-neutral-500 sm:text-sm">
             BASE / FASHION WEB SUPPORT
           </p>
 
-          <h1 className="max-w-5xl text-4xl font-semibold leading-[1.18] tracking-tight sm:text-6xl lg:text-7xl">
+          <h1 className="max-w-5xl text-5xl font-semibold leading-[1.15] tracking-tight sm:text-6xl">
             いい商品が、
             <br />
             ちゃんと売れるWeb導線へ。
           </h1>
 
           <p className="mt-8 max-w-3xl text-base leading-8 text-neutral-300 sm:text-lg">
-            HP制作、SEOライティング、EC運営サポート、AI活用支援まで、
+            HP制作、SEOライティング、EC運営サポート、AI活用までを一貫して支援。
             <br className="hidden sm:block" />
-            アパレル販売とEC運営の現場を知る個人事業主が、小規模ブランドや古着屋のWeb改善に伴走します。
+            アパレル販売とEC運営の現場を知る個人事業主が、小規模ブランドや古着屋のWeb改善を伴走します。
           </p>
 
-          <div className="mt-9 flex flex-col gap-3 sm:mt-11 sm:flex-row sm:gap-4">
+          <p className="mt-4 text-sm text-neutral-500">
+            BASE / 今吉 稜太｜アパレル業界向けWeb支援
+          </p>
+
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <a
               href="mailto:r0629i@ezweb.ne.jp"
               className="rounded-full bg-white px-8 py-4 text-center text-sm font-semibold text-neutral-950 transition hover:bg-neutral-200"
@@ -241,6 +245,31 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      <footer className="border-t border-neutral-800 px-6 py-10 sm:px-10 lg:px-20">
+        <div className="mx-auto flex max-w-6xl flex-col gap-6 text-sm text-neutral-400 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="text-base font-semibold text-white">BASE</p>
+            <p className="mt-2">代表：今吉 稜太</p>
+            <p className="mt-1">
+              アパレル業界向けHP制作・SEOライティング・EC運営サポート・AI活用支援
+            </p>
+          </div>
+
+          <div className="space-y-1">
+            <p>
+              Mail：
+              <a
+                href="mailto:r0629i@ezweb.ne.jp"
+                className="text-white underline-offset-4 hover:underline"
+              >
+                imayoshi@basehp.com
+              </a>
+            </p>
+            <p>Area：全国対応 / オンライン相談可</p>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
