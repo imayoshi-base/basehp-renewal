@@ -12,10 +12,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "BASE｜ホームページ制作・SEOライティング・AI活用支援",
+export const metadata: Metadata = {
+  title: "BASE｜小規模事業者向け外部Web担当",
   description:
-    "HP制作、SEOライティング、EC運営サポート、AI活用支援まで一貫して支援。アパレル販売とEC運営の現場を知るBASEが、小規模ブランドや古着屋のWeb改善に伴走します。",
+    "ホームページ、SEO、Googleマップ、AI活用まで。専任担当を雇うほどではない小規模事業者・個人店向けに、外部Web担当としてWeb活用をサポートします。",
 };
 
 export default function RootLayout({
@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="ja"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
