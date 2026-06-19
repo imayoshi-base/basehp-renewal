@@ -1,4 +1,4 @@
-  const plans = [
+const plans = [
   {
     name: "ライトプラン",
     price: "月額 29,800円",
@@ -51,6 +51,27 @@ const strengths = [
   "Webが苦手な方にもわかりやすく伴走",
 ];
 
+const works = [
+  {
+    category: "Web制作",
+    title: "HP制作・リニューアル",
+    description:
+      "Wixでのホームページ制作、Next.js / Vercelを使った自社サイトのリニューアルを実施。見た目を整えるだけでなく、サービス設計、導線設計、SEO設定まで含めたWeb改善を行っています。",
+  },
+  {
+    category: "SEOライティング",
+    title: "ブランド紹介記事の制作",
+    description:
+      "アパレルブランドや商品に関する紹介記事を中心に、検索意図を意識したSEOライティングを実施。販売現場での経験をもとに、ブランドの背景や商品の魅力が伝わる文章制作を行っています。",
+  },
+  {
+    category: "アパレル支援",
+    title: "古着屋の新規立ち上げ支援",
+    description:
+      "古着屋の新規立ち上げにおいて、コンセプト設計、商品構成、販売導線、Web・SNS活用の整理を支援。開業初期に必要な「見せ方」と「売り方」の土台づくりをサポートしています。",
+  },
+];
+
 const flow = ["無料相談", "現状ヒアリング", "改善方針の提案", "制作・運用サポート"];
 
 const faqs = [
@@ -67,6 +88,8 @@ const faqs = [
     a: "大丈夫です。現状を聞いたうえで、必要な支援内容や優先順位を一緒に整理します。",
   },
 ];
+
+const noteUrl = "https://note.com/base_fashion";
 
 export default function Home() {
   return (
@@ -147,7 +170,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="plans" className="bg-white px-6 py-24 text-neutral-950 sm:px-10 lg:px-20">
+      <section
+        id="plans"
+        className="bg-white px-6 py-24 text-neutral-950 sm:px-10 lg:px-20"
+      >
         <div className="mx-auto max-w-6xl">
           <p className="text-xs tracking-[0.45em] text-neutral-500 sm:text-sm">
             PLANS
@@ -201,6 +227,39 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="bg-white px-6 py-24 text-neutral-950 sm:px-10 lg:px-20">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-xs tracking-[0.45em] text-neutral-500 sm:text-sm">
+            WORKS
+          </p>
+          <h2 className="mt-5 text-3xl font-semibold sm:text-4xl">
+            実績・取り組み
+          </h2>
+
+          <p className="mt-6 max-w-3xl leading-8 text-neutral-700">
+            ホームページ制作、SEOライティング、アパレル・古着領域の立ち上げ支援を中心に、
+            小規模事業者のWeb活用をサポートしています。
+          </p>
+
+          <div className="mt-10 grid gap-5 lg:grid-cols-3">
+            {works.map((work) => (
+              <div
+                key={work.title}
+                className="rounded-3xl border border-neutral-200 p-7"
+              >
+                <p className="text-xs font-semibold tracking-[0.3em] text-neutral-500">
+                  {work.category}
+                </p>
+                <h3 className="mt-4 text-2xl font-semibold">{work.title}</h3>
+                <p className="mt-5 leading-8 text-neutral-700">
+                  {work.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="border-y border-neutral-800 bg-neutral-900/60 px-6 py-24 sm:px-10 lg:px-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs tracking-[0.45em] text-neutral-500 sm:text-sm">
@@ -242,6 +301,31 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="border-y border-neutral-800 bg-neutral-900/60 px-6 py-24 sm:px-10 lg:px-20">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-xs tracking-[0.45em] text-neutral-500 sm:text-sm">
+            NOTE
+          </p>
+          <h2 className="mt-5 text-3xl font-semibold sm:text-4xl">
+            発信・コラム
+          </h2>
+
+          <p className="mt-6 max-w-3xl leading-8 text-neutral-300">
+            アパレル、Web制作、AI活用、働き方、地域のことなどをnoteで発信しています。
+            BASEがどんな考え方で仕事をしているかを知りたい方は、こちらをご覧ください。
+          </p>
+
+          <a
+            href={noteUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-10 inline-block rounded-full bg-white px-8 py-4 text-sm font-semibold text-neutral-950 transition hover:bg-neutral-200"
+          >
+            noteを見る
+          </a>
         </div>
       </section>
 
