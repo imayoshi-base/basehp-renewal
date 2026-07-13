@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BASE｜小規模事業者向け外部Web担当",
+  title: "BASE｜今吉稜太のポートフォリオ",
   description:
-    "ホームページ、SEO、Googleマップ、AI活用まで。専任担当を雇うほどではない小規模事業者・個人店向けに、外部Web担当としてWeb活用をサポートします。",
+    "アパレル販売・店舗運営の経験をもとに、Web制作、SEOライティング、EC改善、アプリ開発に取り組む今吉稜太のポートフォリオサイトです。",
 };
 
 export default function RootLayout({

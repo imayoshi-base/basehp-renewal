@@ -1,91 +1,28 @@
-const plans = [
+const experiences = [
   {
-    name: "ライトプラン",
-    price: "月額 29,800円",
-    items: [
-      "月2回オンライン面談（30分）",
-      "ホームページ更新・改善相談",
-      "Googleビジネスプロフィール相談",
-      "AI活用相談",
-    ],
+    title: "アパレル販売・店舗運営",
+    description:
+      "adidas、White Mountaineering、LOEWEなどで販売・店舗運営・VMD・MDに関わってきました。商品をどう見せるか、どう伝えるか、どう売るかを現場で学んできました。",
   },
   {
-    name: "スタンダードプラン",
-    price: "月額 49,800円",
-    items: [
-      "週1回オンライン面談（30分）または月1回訪問",
-      "ホームページ更新対応",
-      "SEO記事 月1本",
-      "Googleビジネスプロフィール運用相談",
-      "AI活用相談",
-    ],
-  },
-  {
-    name: "パートナープラン",
-    price: "月額 99,800円",
-    items: [
-      "週1回打ち合わせ",
-      "ホームページ運営",
-      "SEO記事 月2本",
-      "EC運営相談",
-      "AI導入支援",
-      "新規施策提案",
-      "月次レポート作成",
-    ],
-  },
-];
-
-const targets = [
-  "ホームページを放置している",
-  "Googleマップを活用できていない",
-  "SNSやAIの使い方がわからない",
-  "Web担当者を雇うほどではない",
-  "困った時に相談できる人が欲しい",
-  "ECや集客を少しずつ整えたい",
-];
-
-const strengths = [
-  "アパレル業界で約10年の現場経験",
-  "店舗運営・販売・MD・ECの視点で提案",
-  "SEOライティングまで一貫して対応",
-  "Webが苦手な方にもわかりやすく伴走",
-];
-
-const works = [
-  {
-    category: "Web制作",
     title: "HP制作・リニューアル",
     description:
-      "Wixでのホームページ制作、Next.js / Vercelを使った自社サイトのリニューアルを実施。見た目を整えるだけでなく、サービス設計、導線設計、SEO設定まで含めたWeb改善を行っています。",
+      "Wixでのホームページ制作、Next.js / Vercelを使ったサイトリニューアルを経験。構成設計、導線整理、SEO設定まで行いました。",
   },
   {
-    category: "SEOライティング",
-    title: "ブランド紹介記事の制作",
+    title: "SEOライティング",
     description:
-      "アパレルブランドや商品に関する紹介記事を中心に、検索意図を意識したSEOライティングを実施。販売現場での経験をもとに、ブランドの背景や商品の魅力が伝わる文章制作を行っています。",
+      "アパレルブランド紹介記事や地域紹介記事を中心に、検索意図を意識した記事制作を行ってきました。",
   },
   {
-    category: "アパレル支援",
-    title: "古着屋の新規立ち上げ支援",
+    title: "古着屋の新規立ち上げ",
     description:
-      "古着屋の新規立ち上げにおいて、コンセプト設計、商品構成、販売導線、Web・SNS活用の整理を支援。開業初期に必要な「見せ方」と「売り方」の土台づくりをサポートしています。",
-  },
-];
-
-const flow = ["無料相談", "現状ヒアリング", "改善方針の提案", "制作・運用サポート"];
-
-const faqs = [
-  {
-    q: "Webに詳しくなくても相談できますか？",
-    a: "はい。専門用語を使いすぎず、現状に合わせて必要な内容から整理します。",
+      "古着屋の立ち上げに関わり、商品構成、販売導線、Web・SNS活用、コンセプト整理などを経験しました。",
   },
   {
-    q: "アパレル以外でも依頼できますか？",
-    a: "可能です。個人事業主・小規模店舗・地域密着型の事業者を中心に対応しています。",
-  },
-  {
-    q: "まず相談だけでも大丈夫ですか？",
-    a: "大丈夫です。現状を聞いたうえで、必要な支援内容や優先順位を一緒に整理します。",
+    title: "Tagd",
+    description:
+      "古着EC出品支援ツールとして、商品登録・在庫管理・CSV出力を想定したWebアプリを開発。現場の出品作業を効率化する仕組みを検証しています。",
   },
 ];
 
@@ -97,214 +34,75 @@ export default function Home() {
       <section className="px-6 py-24 sm:px-10 lg:px-20">
         <div className="mx-auto max-w-6xl">
           <p className="mb-8 text-xs tracking-[0.45em] text-neutral-500 sm:text-sm">
-            BASE / OUTSOURCED WEB PARTNER
+            BASE / RYOTA IMAYOSHI PORTFOLIO
           </p>
 
           <h1 className="max-w-5xl text-5xl font-semibold leading-[1.15] tracking-tight sm:text-6xl">
-            小規模事業者向け
+            アパレルの現場から、
             <br />
-            外部Web担当。
+            Webと文章へ。
           </h1>
 
           <p className="mt-8 max-w-3xl text-base leading-8 text-neutral-300 sm:text-lg">
-            ホームページ、SEO、Googleマップ、AI活用まで。
+            アパレル販売・店舗運営の経験をもとに、
+            Web制作、SEOライティング、EC改善、アプリ開発に取り組んできました。
             <br className="hidden sm:block" />
-            専任担当を雇うほどではないけれど、困った時に相談できるWeb担当としてサポートします。
+            このサイトは、これまでの経験や制作物、発信をまとめたポートフォリオです。
           </p>
 
           <p className="mt-4 text-sm text-neutral-500">
-            BASE / 今吉 稜太｜小規模事業者向けWeb支援
+            BASE / 今吉 稜太
           </p>
-
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <a
-              href="mailto:imayoshi@basehp.com"
-              className="rounded-full bg-white px-8 py-4 text-center text-sm font-semibold text-neutral-950 transition hover:bg-neutral-200"
-            >
-              無料相談する
-            </a>
-            <a
-              href="#plans"
-              className="rounded-full border border-neutral-700 px-8 py-4 text-center text-sm font-semibold text-white transition hover:border-white hover:bg-white hover:text-neutral-950"
-            >
-              料金を見る
-            </a>
-          </div>
         </div>
       </section>
 
       <section className="border-y border-neutral-800 bg-neutral-900/60 px-6 py-20 sm:px-10 lg:px-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-3xl font-semibold leading-tight sm:text-4xl">
-            Web担当者を雇うほどではない。
-            <br />
-            でも、相談できる人は欲しい。
-          </h2>
-          <p className="mt-6 max-w-3xl leading-8 text-neutral-300">
-            小規模事業者や個人店では、ホームページ・Googleマップ・SNS・AI活用など、
-            やるべきことは多いのに、手が回らないケースが少なくありません。
-            BASEは、必要なことを一緒に整理し、無理なくWeb活用を進める外部担当として伴走します。
-          </p>
-        </div>
-      </section>
-
-      <section className="px-6 py-24 sm:px-10 lg:px-20">
-        <div className="mx-auto max-w-6xl">
           <p className="text-xs tracking-[0.45em] text-neutral-500 sm:text-sm">
-            FOR YOU
-          </p>
-          <h2 className="mt-5 text-3xl font-semibold sm:text-4xl">
-            こんな方へ
-          </h2>
-
-          <div className="mt-10 grid gap-4 md:grid-cols-2">
-            {targets.map((target) => (
-              <div
-                key={target}
-                className="rounded-2xl border border-neutral-800 bg-neutral-900 p-6 text-lg font-medium"
-              >
-                {target}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="plans"
-        className="bg-white px-6 py-24 text-neutral-950 sm:px-10 lg:px-20"
-      >
-        <div className="mx-auto max-w-6xl">
-          <p className="text-xs tracking-[0.45em] text-neutral-500 sm:text-sm">
-            PLANS
-          </p>
-          <h2 className="mt-5 text-3xl font-semibold sm:text-4xl">
-            月額プラン
-          </h2>
-
-          <div className="mt-10 grid gap-5 lg:grid-cols-3">
-            {plans.map((plan) => (
-              <div
-                key={plan.name}
-                className="rounded-3xl border border-neutral-200 p-7"
-              >
-                <h3 className="text-2xl font-semibold">{plan.name}</h3>
-                <p className="mt-4 text-3xl font-semibold">{plan.price}</p>
-                <ul className="mt-6 space-y-3 text-neutral-700">
-                  {plan.items.map((item) => (
-                    <li key={item}>・{item}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 py-24 sm:px-10 lg:px-20">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-xs tracking-[0.45em] text-neutral-500 sm:text-sm">
-            SPOT
-          </p>
-          <h2 className="mt-5 text-3xl font-semibold sm:text-4xl">
-            スポット対応
-          </h2>
-
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
-            <div className="rounded-3xl border border-neutral-800 bg-neutral-900 p-7">
-              <h3 className="text-xl font-semibold">LP制作</h3>
-              <p className="mt-4 text-3xl font-semibold">50,000円〜</p>
-            </div>
-            <div className="rounded-3xl border border-neutral-800 bg-neutral-900 p-7">
-              <h3 className="text-xl font-semibold">HP制作</h3>
-              <p className="mt-4 text-3xl font-semibold">100,000円〜</p>
-            </div>
-            <div className="rounded-3xl border border-neutral-800 bg-neutral-900 p-7">
-              <h3 className="text-xl font-semibold">SEOライティング</h3>
-              <p className="mt-4 text-3xl font-semibold">要相談</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white px-6 py-24 text-neutral-950 sm:px-10 lg:px-20">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-xs tracking-[0.45em] text-neutral-500 sm:text-sm">
-            WORKS
-          </p>
-          <h2 className="mt-5 text-3xl font-semibold sm:text-4xl">
-            実績・取り組み
-          </h2>
-
-          <p className="mt-6 max-w-3xl leading-8 text-neutral-700">
-            ホームページ制作、SEOライティング、アパレル・古着領域の立ち上げ支援を中心に、
-            小規模事業者のWeb活用をサポートしています。
-          </p>
-
-          <div className="mt-10 grid gap-5 lg:grid-cols-3">
-            {works.map((work) => (
-              <div
-                key={work.title}
-                className="rounded-3xl border border-neutral-200 p-7"
-              >
-                <p className="text-xs font-semibold tracking-[0.3em] text-neutral-500">
-                  {work.category}
-                </p>
-                <h3 className="mt-4 text-2xl font-semibold">{work.title}</h3>
-                <p className="mt-5 leading-8 text-neutral-700">
-                  {work.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-neutral-800 bg-neutral-900/60 px-6 py-24 sm:px-10 lg:px-20">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-xs tracking-[0.45em] text-neutral-500 sm:text-sm">
-            PROJECT
-          </p>
-          <h2 className="mt-5 text-3xl font-semibold sm:text-4xl">
-            Tagd 開発中
-          </h2>
-
-          <p className="mt-6 max-w-3xl leading-8 text-neutral-300">
-            古着屋・小規模アパレル事業者向けに、商品登録・在庫管理・CSV出力を効率化する
-            出品支援ツール「Tagd」を開発中です。
-            アパレル現場での経験をもとに、日々の出品作業を少しでも軽くする仕組みを作っています。
-          </p>
-
-          <p className="mt-6 max-w-3xl leading-8 text-neutral-400">
-            ただホームページを作るだけではなく、小売・ECの現場を理解したうえで、
-            事業者の売上や業務改善につながるWeb活用を提案します。
-          </p>
-        </div>
-      </section>
-
-      <section className="bg-white px-6 py-24 text-neutral-950 sm:px-10 lg:px-20">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-xs tracking-[0.45em] text-neutral-500 sm:text-sm">
-            STRENGTH
+            ABOUT
           </p>
           <h2 className="mt-5 text-3xl font-semibold leading-tight sm:text-4xl">
-            現場感とWeb施策をつなげる。
+            現場で見てきたことを、
+            <br />
+            Webと文章に落とし込む。
           </h2>
 
-          <div className="mt-10 grid gap-4 md:grid-cols-2">
-            {strengths.map((strength) => (
+          <p className="mt-6 max-w-3xl leading-8 text-neutral-300">
+            アパレル業界で約10年、販売・店舗運営・VMD・MD・ECに関わってきました。
+            商品をどう見せるか、どう伝えるか、どう売るか。
+            その現場感をもとに、Web制作、SEOライティング、EC改善、アプリ開発にも取り組んでいます。
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-white px-6 py-24 text-neutral-950 sm:px-10 lg:px-20">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-xs tracking-[0.45em] text-neutral-500 sm:text-sm">
+            EXPERIENCE
+          </p>
+          <h2 className="mt-5 text-3xl font-semibold sm:text-4xl">
+            これまでやってきたこと
+          </h2>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            {experiences.map((experience) => (
               <div
-                key={strength}
-                className="rounded-2xl border border-neutral-200 p-6 text-lg font-medium"
+                key={experience.title}
+                className="rounded-3xl border border-neutral-200 p-7"
               >
-                {strength}
+                <h3 className="text-2xl font-semibold">
+                  {experience.title}
+                </h3>
+                <p className="mt-5 leading-8 text-neutral-700">
+                  {experience.description}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="border-y border-neutral-800 bg-neutral-900/60 px-6 py-24 sm:px-10 lg:px-20">
+      <section className="px-6 py-24 sm:px-10 lg:px-20">
         <div className="mx-auto max-w-6xl">
           <p className="text-xs tracking-[0.45em] text-neutral-500 sm:text-sm">
             NOTE
@@ -314,8 +112,8 @@ export default function Home() {
           </h2>
 
           <p className="mt-6 max-w-3xl leading-8 text-neutral-300">
-            アパレル、Web制作、AI活用、働き方、地域のことなどをnoteで発信しています。
-            BASEがどんな考え方で仕事をしているかを知りたい方は、こちらをご覧ください。
+            アパレル、働き方、Web制作、AI活用、地域のことなどをnoteで発信しています。
+            文章や考え方はこちらにまとめています。
           </p>
 
           <a
@@ -329,79 +127,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-6 py-24 sm:px-10 lg:px-20">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-xs tracking-[0.45em] text-neutral-500 sm:text-sm">
-            FLOW
-          </p>
-          <h2 className="mt-5 text-3xl font-semibold sm:text-4xl">
-            ご相談の流れ
-          </h2>
-
-          <div className="mt-10 grid gap-5 md:grid-cols-4">
-            {flow.map((item, index) => (
-              <div key={item} className="rounded-3xl bg-neutral-900 p-6">
-                <p className="text-sm text-neutral-500">STEP {index + 1}</p>
-                <p className="mt-4 text-lg font-semibold">{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 py-24 sm:px-10 lg:px-20">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-xs tracking-[0.45em] text-neutral-500 sm:text-sm">
-            FAQ
-          </p>
-          <h2 className="mt-5 text-3xl font-semibold sm:text-4xl">
-            よくある質問
-          </h2>
-
-          <div className="mt-10 space-y-5">
-            {faqs.map((faq) => (
-              <div
-                key={faq.q}
-                className="rounded-3xl border border-neutral-800 p-7"
-              >
-                <h3 className="font-semibold">{faq.q}</h3>
-                <p className="mt-3 leading-7 text-neutral-300">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 py-24 sm:px-10 lg:px-20">
-        <div className="mx-auto max-w-6xl rounded-[2rem] bg-white p-10 text-neutral-950 sm:p-14">
-          <h2 className="text-4xl font-semibold leading-tight sm:text-6xl">
-            まずは、今のWeb活用を
-            <br />
-            整理しませんか。
-          </h2>
-
-          <p className="mt-6 max-w-2xl leading-8 text-neutral-700">
-            ホームページ、SEO、Googleマップ、AI活用。
-            どこから改善すべきか分からない状態でも大丈夫です。
-            現状を聞いたうえで、優先順位から一緒に整理します。
-          </p>
-
-          <a
-            href="mailto:imayoshi@basehp.com"
-            className="mt-10 inline-block rounded-full bg-neutral-950 px-8 py-4 text-sm font-semibold text-white transition hover:bg-neutral-800"
-          >
-            無料相談する
-          </a>
-        </div>
-      </section>
-
       <footer className="border-t border-neutral-800 px-6 py-10 sm:px-10 lg:px-20">
         <div className="mx-auto flex max-w-6xl flex-col gap-6 text-sm text-neutral-400 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-base font-semibold text-white">BASE</p>
-            <p className="mt-2">代表：今吉 稜太</p>
+            <p className="mt-2">今吉 稜太</p>
             <p className="mt-1">
-              小規模事業者向け外部Web担当 / HP・SEO・Googleマップ・AI活用支援
+              Apparel / Web / Writing / EC / Application Development
             </p>
           </div>
 
@@ -415,7 +147,17 @@ export default function Home() {
                 imayoshi@basehp.com
               </a>
             </p>
-            <p>Area：全国対応 / オンライン相談可</p>
+            <p>
+              note：
+              <a
+                href={noteUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white underline-offset-4 hover:underline"
+              >
+                note.com/base_fashion
+              </a>
+            </p>
           </div>
         </div>
       </footer>
