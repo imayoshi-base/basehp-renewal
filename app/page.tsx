@@ -108,7 +108,7 @@ export default function Home() {
           <div className={container}>
             <p className="text-xs tracking-[0.25em] text-neutral-600">SERVICES</p>
             <h2 id="services-title" className="mt-5 text-3xl font-semibold leading-snug sm:text-4xl">現場の経験を、<br className="sm:hidden" />3つのかたちで。</h2>
-            <p className="mt-6 max-w-2xl leading-8 text-neutral-600">文章、運営、企画。いま抱えている課題を伺い、必要なことを整理するところからご一緒します。</p>
+            <p className="mt-6 max-w-3xl text-pretty leading-8 text-neutral-600">文章、運営、企画。いま抱えている課題を伺い、必要なことを整理するところからご一緒します。</p>
             <div className="mt-12 grid gap-10 lg:grid-cols-3 lg:gap-8">
               {services.map((service) => (
                 <article key={service.number} className="border-t border-neutral-400 pt-6">
