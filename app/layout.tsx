@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 const title = "BASE｜今吉稜太 — SEOライティング・EC運営・アパレル企画";
 const description =
-  "今吉稜太のポートフォリオ・活動拠点「BASE」。約10年のアパレル販売・店舗運営経験をもとに、SEOライティング、EC運営・業務改善、アパレル企画・コンサルに取り組んでいます。プロフィール、経験・制作、note、お問い合わせをご覧いただけます。";
+  "今吉稜太の活動拠点「BASE」。約10年のアパレル販売・店舗運営経験をもとに、SEOライティング、EC運営・業務改善、アパレル企画・コンサルに取り組んでいます。プロフィール、経験・制作、note、お問い合わせをご覧いただけます。";
 
 export const metadata: Metadata = {
   title,
