@@ -164,7 +164,7 @@ export default function Home() {
         <section id="contact" aria-labelledby="contact-title" className={section}>
           <div className={container}>
             <p className={eyebrow}>CONTACT</p>
-            <h2 id="contact-title" className="mt-5 text-3xl font-semibold leading-snug sm:text-5xl">まずは、お話を聞かせてください。</h2>
+            <h2 id="contact-title" className="mt-5 text-3xl font-semibold leading-snug sm:text-5xl">まずは、ご相談ください。</h2>
             <p className="mt-6 max-w-3xl text-pretty leading-8 text-neutral-300">
               <span className="block">記事制作、EC運営の見直し、店舗やブランドの企画など。</span>
               <span className="block">ご相談内容、ご希望の時期、現在お困りのことをメールでお送りください。</span>
