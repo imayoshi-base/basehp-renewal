@@ -91,12 +91,12 @@ export default function Home() {
             <p className={eyebrow}>BASE / RYOTA IMAYOSHI</p>
             <h1 id="hero-title" className="mt-8 text-4xl font-semibold leading-[1.3] tracking-tight sm:text-6xl lg:text-7xl">アパレルの現場から、<br />伝える、整える、<br className="sm:hidden" />つくる。</h1>
             <p className="mt-8 text-xl font-medium sm:text-2xl">今吉 稜太 <span className="ml-2 inline-block text-xs font-normal tracking-[0.15em] text-neutral-400">RYOTA IMAYOSHI</span></p>
-            <p className="mt-6 max-w-2xl text-base leading-8 text-neutral-300">アパレル業界で約10年。販売・店舗運営から、Webと文章へ。<br />現場で培った視点をもとに、SEOライティング、EC運営・業務改善、アパレル企画・コンサルに取り組んでいます。</p>
+            <p className="mt-6 max-w-2xl text-base leading-8 text-neutral-300">アパレル業界で約10年。販売・店舗運営から、Webと文章へ。<br />現場で培った視点をもとに、SEOライティング、EC運営・業務改善、アパレル企画に取り組んでいます。</p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a href="#contact" className={`${button} bg-white text-neutral-950 hover:bg-neutral-200`}>仕事について相談する <span aria-hidden="true" className="ml-5">↗</span></a>
               <a href="#services" className={`${button} border border-neutral-600 hover:bg-neutral-900`}>サービスを見る <span aria-hidden="true" className="ml-5">↓</span></a>
             </div>
-            <p className="mt-16 border-t border-neutral-800 pt-6 text-xs leading-6 tracking-[0.1em] text-neutral-400">WRITING / EC OPERATIONS / APPAREL PLANNING</p>
+            <p className="mt-16 border-t border-neutral-800 pt-6 text-xs leading-6 tracking-widest text-neutral-400">WRITING / EC OPERATIONS / APPAREL PLANNING</p>
           </div>
         </section>
 
@@ -160,7 +160,7 @@ export default function Home() {
         <section id="contact" aria-labelledby="contact-title" className={section}>
           <div className={container}>
             <p className={eyebrow}>CONTACT</p>
-            <h2 id="contact-title" className="mt-5 text-3xl font-semibold leading-snug sm:text-5xl">まずは、お話を聞かせてください。</h2>
+            <h2 id="contact-title" className="mt-5 text-3xl font-semibold leading-snug sm:text-5xl">まずは、ご連絡ください。</h2>
             <p className="mt-6 max-w-2xl leading-8 text-neutral-300">記事制作、EC運営の見直し、店舗やブランドの企画など。<br className="hidden sm:block" />ご相談内容、ご希望の時期、現在お困りのことをメールでお送りください。内容を拝見し、対応できる範囲をご相談します。</p>
             <a href={contactUrl} className={`${button} mt-10 bg-white text-neutral-950 hover:bg-neutral-200`}>メールで相談する <span aria-hidden="true" className="ml-5">↗</span></a>
             <p className="mt-5 text-sm text-neutral-400"><a href={contactUrl} className={`break-all underline underline-offset-4 hover:text-white ${focus}`}>{email}</a></p>
