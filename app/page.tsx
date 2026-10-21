@@ -88,7 +88,7 @@ export default function Home() {
             <p className="mt-6 max-w-3xl text-base leading-8 text-neutral-300">アパレル・リユース業界のDX・業務改善支援</p>
             <p className="mt-8 text-xl font-medium sm:text-2xl">今吉 稜太 <span className="ml-2 inline-block text-xs font-normal tracking-[0.15em] text-neutral-400">RYOTA IMAYOSHI</span></p>
             <p className="mt-6 max-w-3xl text-pretty text-base leading-8 text-neutral-300">
-              <span className="block">小〜中堅のアパレル・リユース企業に向けて、現場とシステムの間にある課題を整理します。</span>
+              <span className="block">アパレル・リユース企業に向けて、現場とシステムの間にある課題を整理します。</span>
               <span className="block">販売・店舗運営・ECの経験をもとに、業務の見直しから仕組みづくりまで。</span>
               <span className="block">BASEは、現場で使い続けられる方法を一緒に考えます。</span>
             </p>
