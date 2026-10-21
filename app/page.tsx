@@ -97,6 +97,7 @@ export default function Home() {
               <a href="#services" className={`${button} border border-neutral-600 hover:bg-neutral-900`}>サービスを見る <span aria-hidden="true" className="ml-5">↓</span></a>
             </div>
             <p className="mt-16 border-t border-neutral-800 pt-6 text-xs leading-6 tracking-widest text-neutral-400">DX & OPERATIONS / EC & STORES / WEB & CONTENT</p>
+            <p lang="en" className="mt-3 text-xs leading-6 tracking-wider text-neutral-400">Based in Fukuoka / Available Nationwide</p>
           </div>
         </section>
 
@@ -125,10 +126,11 @@ export default function Home() {
           <div className={`${container} grid gap-8 md:grid-cols-[1fr_2fr] md:gap-16`}>
             <div><p className={eyebrow}>ABOUT</p><p className="mt-6 text-2xl font-semibold">今吉 稜太</p><p className="mt-2 text-xs tracking-[0.15em] text-neutral-400">RYOTA IMAYOSHI / BASE</p></div>
             <div>
-              <h2 id="about-title" className="text-3xl font-semibold leading-normal sm:text-4xl">現場の理解を、<br />仕組みづくりの土台に。</h2>
+              <h2 id="about-title" className="text-3xl font-semibold leading-normal sm:text-4xl">東京で培った経験を、<br />福岡から。</h2>
               <div className="mt-6 space-y-5 leading-8 text-neutral-300">
-                <p>私は、販売や店舗運営で培った現場の視点を大切にしています。日々の作業がどう進み、どこに負担があるのか。その理解から、業務改善を考えます。</p>
+                <p>私は、東京でのアパレル販売・店舗運営で培った現場の視点を大切にしています。日々の作業がどう進み、どこに負担があるのか。その理解から、業務改善を考えます。</p>
                 <p>adidas、White Mountaineering、LOEWEでの勤務を経て、古着・リユースの現場やECにも関わってきました。販売・店舗運営・VMD・MDの経験をもとに、文章やWeb、日々の業務の仕組みへと取り組みを広げています。</p>
+                <p>現在は福岡県福岡市を活動拠点に、福岡での対面でのご相談・支援と、全国へのオンライン対応を行っています。東京で培った経験を活かし、アパレル・リユース事業の現場に合う業務改善を一緒に考えます。</p>
                 <p>BASEは、私・今吉稜太が個人で運営する事業です。DX・業務改善を軸に、EC・店舗運営、Web・コンテンツを支援します。AIやシステムの導入そのものを目的にせず、現場で使えて、続けられる仕組みを考えます。</p>
               </div>
             </div>
@@ -180,6 +182,7 @@ export default function Home() {
             <h2 id="contact-title" className="mt-5 text-balance text-3xl font-semibold leading-snug sm:text-5xl">まずは、<br className="sm:hidden" />ご相談ください。</h2>
             <p className="mt-6 max-w-3xl text-pretty leading-8 text-neutral-300">
               <span className="block">手作業や二重入力、商品・在庫情報の整理、EC・店舗運営の見直しなど。</span>
+              <span className="block">福岡での対面でのご相談・支援、全国からのオンライン相談に対応しています。</span>
               <span className="block">現在お困りのこと、使っているツール、ご希望の時期をメールでお送りください。</span>
               <span className="block">課題がまだ整理できていなくても構いません。私が内容を拝見し、対応できる範囲と進め方をご相談します。</span>
             </p>
@@ -191,7 +194,10 @@ export default function Home() {
 
       <footer className="border-t border-neutral-800 px-6 py-8 sm:px-10 lg:px-20">
         <div className={`${container} flex flex-col gap-6 text-xs text-neutral-400 sm:flex-row sm:items-center sm:justify-between`}>
-          <p><span className="mr-4 font-semibold tracking-[0.15em] text-white">BASE</span>今吉 稜太 / RYOTA IMAYOSHI</p>
+          <div className="space-y-3 leading-6">
+            <p><span className="mr-4 font-semibold tracking-[0.15em] text-white">BASE</span>今吉 稜太 / RYOTA IMAYOSHI</p>
+            <p>活動拠点：福岡県福岡市｜全国オンライン対応</p>
+          </div>
           <a href="#top" className={`self-start hover:text-white ${focus}`}>ページの先頭へ ↑</a>
         </div>
       </footer>
