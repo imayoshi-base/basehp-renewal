@@ -5,27 +5,27 @@ const contactUrl = `mailto:${email}`;
 const services = [
   {
     number: "01",
-    title: "SEOライティング",
-    subtitle: "探している人に、伝わる文章を。",
+    title: "DX・業務改善支援",
+    subtitle: "現場とシステムの間を、つなぐ。",
     description:
-      "アパレルブランドや地域紹介の記事制作経験をもとに、検索意図と読者の関心を整理。商品の背景や魅力を、わかりやすい言葉で届けます。",
-    items: ["記事の構成・執筆", "ブランド・商品紹介", "既存記事の見直し"],
+      "転記や手作業、担当者に依存した業務など、現場の困りごとを整理。業務フローの見直しから、ツールの選定・導入、運用の整備まで、必要な範囲を一緒に考えます。AI・AX（AIを活かした業務変革）も、課題に合う場合に活用する手段のひとつです。",
+    items: ["業務の棚卸し・課題整理", "商品・在庫情報の整理、転記作業の見直し", "ツール導入・AI活用と運用定着の支援"],
   },
   {
     number: "02",
-    title: "EC運営・業務改善",
+    title: "EC・店舗運営支援",
     subtitle: "日々の運営を、続けやすい仕組みに。",
     description:
-      "販売・店舗運営とECに関わってきた経験から、商品情報の整理や販売導線、日々の作業を見直します。現場の使いやすさを大切に、改善方法を一緒に考えます。",
-    items: ["商品情報・販売導線の整理", "出品作業・運用フローの見直し", "Web・ツールを使った業務改善の相談"],
+      "販売・店舗運営とECに関わってきた経験をもとに、商品情報や出品作業、販売導線を見直します。店舗とEC、それぞれの現場に合う無理のない運営を考えます。",
+    items: ["商品登録・出品フローの整理", "店舗・EC間の情報共有の見直し", "商品構成・売場・販売導線の相談"],
   },
   {
     number: "03",
-    title: "アパレル企画・コンサル",
-    subtitle: "現場の視点で、次の一歩を考える。",
+    title: "Web・コンテンツ支援",
+    subtitle: "事業の魅力を、伝わるかたちに。",
     description:
-      "販売・VMD・MDや古着屋の立ち上げに関わった経験をもとに、コンセプトや商品構成、見せ方を整理。店舗とWebの接点も含めて、ご相談を伺います。",
-    items: ["コンセプト・商品構成の相談", "売場づくり・商品の見せ方", "店舗とWeb・SNSの活用相談"],
+      "Web制作や記事制作の経験をもとに、サイトの構成と導線、商品やブランドの伝え方を整理。運営の目的に合わせて、Webとコンテンツの改善を支援します。",
+    items: ["Webサイトの制作・改善", "SEOを意識した構成・記事制作", "ブランド・商品紹介、既存記事の見直し"],
   },
 ];
 
@@ -54,12 +54,7 @@ const experiences = [
     description:
       "Wixでのホームページ制作、Next.js / Vercelを使ったサイトリニューアルを経験。構成設計、導線整理、SEO設定に加え、アパレルブランドや地域紹介の記事制作にも取り組んできました。",
   },
-  {
-    label: "PERSONAL PROJECT",
-    title: "Tagd — 古着EC出品支援ツール",
-    description:
-      "商品登録・在庫管理・CSV出力を想定したWebアプリを開発。出品作業を効率化する仕組みを検証している個人プロジェクトです。",
-  },
+
 ];
 
 const container = "mx-auto w-full max-w-6xl";
@@ -78,7 +73,7 @@ export default function Home() {
         <div className={`${container} flex flex-wrap items-center justify-between gap-5 py-6`}>
           <a href="#top" aria-label="BASE トップへ" className={`text-xl font-semibold tracking-[0.2em] ${focus}`}>BASE<span className="text-neutral-500">.</span></a>
           <nav aria-label="メインナビゲーション" className="flex flex-wrap gap-x-5 gap-y-3 text-xs text-neutral-300 sm:gap-x-7 sm:text-sm">
-            {[ ["サービス", "services"], ["プロフィール", "about"], ["経験・制作", "experience"], ["お問い合わせ", "contact"] ].map(([label, id]) => (
+            {[ ["サービス", "services"], ["プロフィール", "about"], ["経験", "experience"], ["開発中の取り組み", "projects"], ["お問い合わせ", "contact"] ].map(([label, id]) => (
               <a key={id} href={`#${id}`} className={`transition hover:text-white ${focus}`}>{label}</a>
             ))}
           </nav>
@@ -89,26 +84,27 @@ export default function Home() {
         <section aria-labelledby="hero-title" className="px-6 py-24 sm:px-10 sm:py-32 lg:px-20">
           <div className={container}>
             <p className={eyebrow}>BASE / RYOTA IMAYOSHI</p>
-            <h1 id="hero-title" className="mt-8 text-4xl font-semibold leading-[1.3] tracking-tight sm:text-6xl lg:text-7xl">アパレルの現場から、<br />伝える、整える、<br className="sm:hidden" />つくる。</h1>
+            <h1 id="hero-title" className="mt-8 text-3xl font-semibold leading-[1.3] tracking-tight sm:text-6xl lg:text-7xl">現場を知り、<br />仕組みをつくり、<br />事業を前に進める。</h1>
+            <p className="mt-6 max-w-3xl text-base leading-8 text-neutral-300">アパレル・リユース業界のDX・業務改善支援</p>
             <p className="mt-8 text-xl font-medium sm:text-2xl">今吉 稜太 <span className="ml-2 inline-block text-xs font-normal tracking-[0.15em] text-neutral-400">RYOTA IMAYOSHI</span></p>
             <p className="mt-6 max-w-3xl text-pretty text-base leading-8 text-neutral-300">
-              <span className="block">アパレル業界で約10年。販売・店舗運営から、Webと文章へ。</span>
-              <span className="block">現場で培った視点をもとに、</span>
-              <span className="block">SEOライティング、EC運営・業務改善、アパレル企画・コンサルに取り組んでいます。</span>
+              <span className="block">小〜中堅のアパレル・リユース企業に向けて、現場とシステムの間にある課題を整理します。</span>
+              <span className="block">販売・店舗運営・ECの経験をもとに、業務の見直しから仕組みづくりまで。</span>
+              <span className="block">BASEは、現場で使い続けられる方法を一緒に考えます。</span>
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a href="#contact" className={`${button} bg-white text-neutral-950 hover:bg-neutral-200`}>仕事について相談する <span aria-hidden="true" className="ml-5">↗</span></a>
               <a href="#services" className={`${button} border border-neutral-600 hover:bg-neutral-900`}>サービスを見る <span aria-hidden="true" className="ml-5">↓</span></a>
             </div>
-            <p className="mt-16 border-t border-neutral-800 pt-6 text-xs leading-6 tracking-widest text-neutral-400">WRITING / EC OPERATIONS / APPAREL PLANNING</p>
+            <p className="mt-16 border-t border-neutral-800 pt-6 text-xs leading-6 tracking-widest text-neutral-400">DX & OPERATIONS / EC & STORES / WEB & CONTENT</p>
           </div>
         </section>
 
         <section id="services" aria-labelledby="services-title" className={`${section} bg-neutral-100 text-neutral-950`}>
           <div className={container}>
             <p className="text-xs tracking-[0.25em] text-neutral-600">SERVICES</p>
-            <h2 id="services-title" className="mt-5 text-3xl font-semibold leading-snug sm:text-4xl">現場の経験を、<br className="sm:hidden" />3つのかたちで。</h2>
-            <p className="mt-6 max-w-3xl text-pretty leading-8 text-neutral-600">文章、運営、企画。いま抱えている課題を伺い、必要なことを整理するところからご一緒します。</p>
+            <h2 id="services-title" className="mt-5 text-3xl font-semibold leading-snug sm:text-4xl">業務の仕組みを軸に、<br className="sm:hidden" />3つの支援。</h2>
+            <p className="mt-6 max-w-3xl text-pretty leading-8 text-neutral-600">主軸はDX・業務改善支援。EC・店舗運営、Web・コンテンツも含めて、いま抱えている課題を伺い、取り組む順番と必要な支援を整理します。</p>
             <div className="mt-12 grid gap-10 lg:grid-cols-3 lg:gap-8">
               {services.map((service) => (
                 <article key={service.number} className="border-t border-neutral-400 pt-6">
@@ -129,11 +125,11 @@ export default function Home() {
           <div className={`${container} grid gap-8 md:grid-cols-[1fr_2fr] md:gap-16`}>
             <div><p className={eyebrow}>ABOUT</p><p className="mt-6 text-2xl font-semibold">今吉 稜太</p><p className="mt-2 text-xs tracking-[0.15em] text-neutral-400">RYOTA IMAYOSHI / BASE</p></div>
             <div>
-              <h2 id="about-title" className="text-3xl font-semibold leading-normal sm:text-4xl">商品と人のあいだに、<br />できることを。</h2>
+              <h2 id="about-title" className="text-3xl font-semibold leading-normal sm:text-4xl">現場の理解を、<br />仕組みづくりの土台に。</h2>
               <div className="mt-6 space-y-5 leading-8 text-neutral-300">
-                <p>商品をどう見せるか、どう伝えるか、どう売るか。アパレルの現場で向き合ってきた問いが、いまの仕事の土台です。</p>
+                <p>私は、販売や店舗運営で培った現場の視点を大切にしています。日々の作業がどう進み、どこに負担があるのか。その理解から、業務改善を考えます。</p>
                 <p>adidas、White Mountaineering、LOEWEでの勤務を経て、古着・リユースの現場やECにも関わってきました。販売・店舗運営・VMD・MDの経験をもとに、文章やWeb、日々の業務の仕組みへと取り組みを広げています。</p>
-                <p>BASEは、私自身の経験と制作、発信をまとめた活動の拠点です。お店やブランドの背景を理解し、その魅力が届く伝え方と、無理なく続けられる運営を考えます。</p>
+                <p>BASEは、私・今吉稜太が個人で運営する事業です。DX・業務改善を軸に、EC・店舗運営、Web・コンテンツを支援します。AIやシステムの導入そのものを目的にせず、現場で使えて、続けられる仕組みを考えます。</p>
               </div>
             </div>
           </div>
@@ -141,8 +137,9 @@ export default function Home() {
 
         <section id="experience" aria-labelledby="experience-title" className={section}>
           <div className={container}>
-            <p className={eyebrow}>EXPERIENCE & PROJECTS</p>
-            <h2 id="experience-title" className="mt-5 text-3xl font-semibold sm:text-4xl">これまでの経験と、いまの取り組み。</h2>
+            <p className={eyebrow}>EXPERIENCE</p>
+            <h2 id="experience-title" className="mt-5 text-3xl font-semibold sm:text-4xl">支援の土台となる、これまでの経験。</h2>
+            <p className="mt-6 max-w-3xl leading-8 text-neutral-300">以下は私自身の勤務・制作経験です。BASEとしての受託実績や、各社へのDX導入実績を示すものではありません。</p>
             <div className="mt-12">
               {experiences.map((experience) => (
                 <article key={experience.title} className="grid gap-4 border-t border-neutral-800 py-8 md:grid-cols-[1fr_2fr] md:gap-16">
@@ -151,6 +148,22 @@ export default function Home() {
                 </article>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section id="projects" aria-labelledby="projects-title" className={`${section} border-t border-neutral-800`}>
+          <div className={container}>
+            <p className={eyebrow}>PROJECTS</p>
+            <h2 id="projects-title" className="mt-5 text-3xl font-semibold sm:text-4xl">現場の課題から、仕組みを試す。</h2>
+            <article className="mt-12 grid gap-4 border-t border-neutral-800 py-8 md:grid-cols-[1fr_2fr] md:gap-16">
+              <div><p className="text-xs tracking-[0.15em] text-neutral-400">PERSONAL PROJECT</p><p className="mt-4 inline-block rounded-full border border-neutral-600 px-4 py-2 text-sm">開発中</p></div>
+              <div>
+                <h3 className="text-xl font-medium">Tagd — 古着EC出品支援ツール</h3>
+                <p className="mt-4 max-w-2xl text-sm leading-8 text-neutral-300">商品登録・在庫管理・CSV出力を想定したWebアプリを開発中です。古着ECの出品作業を効率化する仕組みを検証しています。</p>
+                <p className="mt-4 max-w-2xl text-sm leading-8 text-neutral-400">私自身の個人開発プロジェクトで、一般提供前の取り組みです。導入実績や効果を示すものではなく、機能・提供時期は未定です。</p>
+                <a href="#contact" className={`mt-6 inline-block text-sm underline underline-offset-4 ${focus}`}>出品業務の課題を相談する →</a>
+              </div>
+            </article>
           </div>
         </section>
 
@@ -164,11 +177,11 @@ export default function Home() {
         <section id="contact" aria-labelledby="contact-title" className={section}>
           <div className={container}>
             <p className={eyebrow}>CONTACT</p>
-            <h2 id="contact-title" className="mt-5 text-3xl font-semibold leading-snug sm:text-5xl">まずは、ご相談ください。</h2>
+            <h2 id="contact-title" className="mt-5 text-balance text-3xl font-semibold leading-snug sm:text-5xl">まずは、<br className="sm:hidden" />ご相談ください。</h2>
             <p className="mt-6 max-w-3xl text-pretty leading-8 text-neutral-300">
-              <span className="block">記事制作、EC運営の見直し、店舗やブランドの企画など。</span>
-              <span className="block">ご相談内容、ご希望の時期、現在お困りのことをメールでお送りください。</span>
-              <span className="block">内容を拝見し、対応できる範囲をご相談します。</span>
+              <span className="block">手作業や二重入力、商品・在庫情報の整理、EC・店舗運営の見直しなど。</span>
+              <span className="block">現在お困りのこと、使っているツール、ご希望の時期をメールでお送りください。</span>
+              <span className="block">課題がまだ整理できていなくても構いません。私が内容を拝見し、対応できる範囲と進め方をご相談します。</span>
             </p>
             <a href={contactUrl} className={`${button} mt-10 bg-white text-neutral-950 hover:bg-neutral-200`}>メールで相談する <span aria-hidden="true" className="ml-5">↗</span></a>
             <p className="mt-5 text-sm text-neutral-400"><a href={contactUrl} className={`break-all underline underline-offset-4 hover:text-white ${focus}`}>{email}</a></p>

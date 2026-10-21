@@ -12,11 +12,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const title = "BASE｜今吉稜太 — SEOライティング・EC運営・アパレル企画";
+const title = "BASE｜アパレル・リユース業界のDX・業務改善支援｜今吉稜太";
 const description =
-  "今吉稜太の活動拠点「BASE」。約10年のアパレル販売・店舗運営経験をもとに、SEOライティング、EC運営・業務改善、アパレル企画・コンサルに取り組んでいます。プロフィール、経験・制作、note、お問い合わせをご覧いただけます。";
+  "小〜中堅のアパレル・リユース企業向けに、BASEの今吉稜太がDX・業務改善を支援。販売・店舗運営・ECの経験をもとに、現場とシステムの間の課題を整理し、EC・店舗運営、Web・コンテンツまで支援します。";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.basehp.com"),
+  alternates: { canonical: "/" },
   title,
   description,
   authors: [{ name: "今吉 稜太" }],
@@ -24,6 +26,7 @@ export const metadata: Metadata = {
     title,
     description,
     siteName: "BASE",
+    url: "https://www.basehp.com/",
     locale: "ja_JP",
     type: "website",
   },
