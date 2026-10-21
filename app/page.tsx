@@ -139,7 +139,7 @@ export default function Home() {
           <div className={container}>
             <p className={eyebrow}>EXPERIENCE</p>
             <h2 id="experience-title" className="mt-5 text-3xl font-semibold sm:text-4xl">支援の土台となる、これまでの経験。</h2>
-            <p className="mt-6 max-w-3xl leading-8 text-neutral-300">以下は私自身の勤務・制作経験です。BASEとしての受託実績や、各社へのDX導入実績を示すものではありません。</p>
+            <p className="mt-6 max-w-3xl leading-8 text-neutral-300"></p>
             <div className="mt-12">
               {experiences.map((experience) => (
                 <article key={experience.title} className="grid gap-4 border-t border-neutral-800 py-8 md:grid-cols-[1fr_2fr] md:gap-16">
