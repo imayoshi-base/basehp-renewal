@@ -130,7 +130,7 @@ export default function Home() {
               <div className="mt-6 space-y-5 leading-8 text-neutral-300">
                 <p>私は、東京でのアパレル販売・店舗運営で培った現場の視点を大切にしています。日々の作業がどう進み、どこに負担があるのか。その理解から、業務改善を考えます。</p>
                 <p>adidas、White Mountaineering、LOEWEでの勤務を経て、古着・リユースの現場やECにも関わってきました。販売・店舗運営・VMD・MDの経験をもとに、文章やWeb、日々の業務の仕組みへと取り組みを広げています。</p>
-                <p>現在は福岡県福岡市を活動拠点に、福岡での対面でのご相談・支援と、全国へのオンライン対応を行っています。東京で培った経験を活かし、アパレル・リユース事業の現場に合う業務改善を一緒に考えます。</p>
+                <p>現在は福岡県を活動拠点に、福岡での対面でのご相談・支援と、全国へのオンライン対応を行っています。東京で培った経験を活かし、アパレル・リユース事業の現場に合う業務改善を一緒に考えます。</p>
                 <p>BASEは、私・今吉稜太が個人で運営する事業です。DX・業務改善を軸に、EC・店舗運営、Web・コンテンツを支援します。AIやシステムの導入そのものを目的にせず、現場で使えて、続けられる仕組みを考えます。</p>
               </div>
             </div>
@@ -196,7 +196,7 @@ export default function Home() {
         <div className={`${container} flex flex-col gap-6 text-xs text-neutral-400 sm:flex-row sm:items-center sm:justify-between`}>
           <div className="space-y-3 leading-6">
             <p><span className="mr-4 font-semibold tracking-[0.15em] text-white">BASE</span>今吉 稜太 / RYOTA IMAYOSHI</p>
-            <p>活動拠点：福岡県福岡市｜全国オンライン対応</p>
+            <p>活動拠点：福岡県｜全国オンライン対応</p>
           </div>
           <a href="#top" className={`self-start hover:text-white ${focus}`}>ページの先頭へ ↑</a>
         </div>
