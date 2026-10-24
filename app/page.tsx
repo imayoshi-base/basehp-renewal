@@ -160,9 +160,9 @@ export default function Home() {
             <article className="mt-12 grid gap-4 border-t border-neutral-800 py-8 md:grid-cols-[1fr_2fr] md:gap-16">
               <div><p className="text-xs tracking-[0.15em] text-neutral-400">PERSONAL PROJECT</p><p className="mt-4 inline-block rounded-full border border-neutral-600 px-4 py-2 text-sm">無料モニター募集中</p></div>
               <div>
-                <h3 className="text-xl font-medium">Tagd — 古着屋・セレクトショップの在庫管理</h3>
+                <h3 className="text-xl font-medium">Tagd — アパレルショップの在庫管理</h3>
                 <p className="mt-4 max-w-2xl text-sm leading-8 text-neutral-300">商品・SKU別の在庫管理から、入出庫、取置き、販売確定、操作履歴の確認まで。日々の店舗業務をシンプルにするWebアプリです。</p>
-                <p className="mt-4 max-w-2xl text-sm leading-8 text-neutral-400">現在、1店舗限定・2週間無料のモニター店舗を募集しています。実際のお店で使いながら、フィードバックにご協力いただける小規模な古着屋・セレクトショップが対象です。</p>
+                <p className="mt-4 max-w-2xl text-sm leading-8 text-neutral-400">現在、1店舗限定・2週間無料のモニター店舗を募集しています。実際のお店で使いながら、フィードバックにご協力いただけるアパレルショップが対象です。</p>
                 <a href="/tagd" className={`mt-6 inline-block text-sm underline underline-offset-4 ${focus}`}>Tagdの詳細・無料モニター募集を見る →</a>
               </div>
             </article>
