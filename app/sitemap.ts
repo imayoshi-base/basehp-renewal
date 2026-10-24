@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [{ url: "https://www.basehp.com/" }];
+  return [{ url: "https://www.basehp.com/" }, { url: "https://www.basehp.com/tagd" }];
 }
