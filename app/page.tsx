@@ -162,7 +162,7 @@ export default function Home() {
               <div>
                 <h3 className="text-xl font-medium">Tagd — 古着屋・セレクトショップの在庫管理</h3>
                 <p className="mt-4 max-w-2xl text-sm leading-8 text-neutral-300">商品・SKU別の在庫管理から、入出庫、取置き、販売確定、操作履歴の確認まで。日々の店舗業務をシンプルにするWebアプリです。</p>
-                <p className="mt-4 max-w-2xl text-sm leading-8 text-neutral-400">現在、1店舗限定・2週間無料のモニター店舗を募集しています。実際のお店で使いながら、フィードバックにご協力いただける古着屋・セレクトショップが対象です。</p>
+                <p className="mt-4 max-w-2xl text-sm leading-8 text-neutral-400">現在、1店舗限定・2週間無料のモニター店舗を募集しています。実際のお店で使いながら、フィードバックにご協力いただける小規模な古着屋・セレクトショップが対象です。</p>
                 <a href="/tagd" className={`mt-6 inline-block text-sm underline underline-offset-4 ${focus}`}>Tagdの詳細・無料モニター募集を見る →</a>
               </div>
             </article>
