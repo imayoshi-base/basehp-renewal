@@ -158,12 +158,12 @@ export default function Home() {
             <p className={eyebrow}>PROJECTS</p>
             <h2 id="projects-title" className="mt-5 text-3xl font-semibold sm:text-4xl">現場の課題から、仕組みを試す。</h2>
             <article className="mt-12 grid gap-4 border-t border-neutral-800 py-8 md:grid-cols-[1fr_2fr] md:gap-16">
-              <div><p className="text-xs tracking-[0.15em] text-neutral-400">PERSONAL PROJECT</p><p className="mt-4 inline-block rounded-full border border-neutral-600 px-4 py-2 text-sm">開発中</p></div>
+              <div><p className="text-xs tracking-[0.15em] text-neutral-400">PERSONAL PROJECT</p><p className="mt-4 inline-block rounded-full border border-neutral-600 px-4 py-2 text-sm">無料モニター募集中</p></div>
               <div>
-                <h3 className="text-xl font-medium">Tagd — 古着EC出品支援ツール</h3>
-                <p className="mt-4 max-w-2xl text-sm leading-8 text-neutral-300">商品登録・在庫管理・CSV出力を想定したWebアプリを開発中です。古着ECの出品作業を効率化する仕組みを検証しています。</p>
-                <p className="mt-4 max-w-2xl text-sm leading-8 text-neutral-400">私自身の個人開発プロジェクトで、一般提供前の取り組みです。導入実績や効果を示すものではなく、機能・提供時期は未定です。</p>
-                <a href="#contact" className={`mt-6 inline-block text-sm underline underline-offset-4 ${focus}`}>出品業務の課題を相談する →</a>
+                <h3 className="text-xl font-medium">Tagd — 古着屋・セレクトショップの在庫管理</h3>
+                <p className="mt-4 max-w-2xl text-sm leading-8 text-neutral-300">商品・SKU別の在庫管理から、入出庫、取置き、販売確定、操作履歴の確認まで。日々の店舗業務をシンプルにするWebアプリです。</p>
+                <p className="mt-4 max-w-2xl text-sm leading-8 text-neutral-400">現在、1店舗限定・2週間無料のモニター店舗を募集しています。実際のお店で使いながら、フィードバックにご協力いただける古着屋・セレクトショップが対象です。</p>
+                <a href="/tagd" className={`mt-6 inline-block text-sm underline underline-offset-4 ${focus}`}>Tagdの詳細・無料モニター募集を見る →</a>
               </div>
             </article>
           </div>
