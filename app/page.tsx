@@ -158,12 +158,15 @@ export default function Home() {
             <p className={eyebrow}>PROJECTS</p>
             <h2 id="projects-title" className="mt-5 text-3xl font-semibold sm:text-4xl">現場の課題から、仕組みを試す。</h2>
             <article className="mt-12 grid gap-4 border-t border-neutral-800 py-8 md:grid-cols-[1fr_2fr] md:gap-16">
-              <div><p className="text-xs tracking-[0.15em] text-neutral-400">PERSONAL PROJECT</p><p className="mt-4 inline-block rounded-full border border-neutral-600 px-4 py-2 text-sm">無料モニター募集中</p></div>
+              <div><p className="text-xs tracking-[0.15em] text-neutral-400">IN-HOUSE PRODUCT</p><p className="mt-4 inline-block rounded-full border border-neutral-600 px-4 py-2 text-sm">紹介・デモ公開中</p></div>
               <div>
-                <h3 className="text-xl font-medium">Tagd — アパレルショップの在庫管理</h3>
-                <p className="mt-4 max-w-2xl text-sm leading-8 text-neutral-300">商品・SKU別の在庫管理から、入出庫、取置き、販売確定、操作履歴の確認まで。日々の店舗業務をシンプルにするWebアプリです。</p>
-                <p className="mt-4 max-w-2xl text-sm leading-8 text-neutral-400">現在、1店舗限定・2週間無料のモニター店舗を募集しています。実際のお店で使いながら、フィードバックにご協力いただけるアパレルショップが対象です。</p>
-                <a href="/tagd" className={`mt-6 inline-block text-sm underline underline-offset-4 ${focus}`}>Tagdの詳細・無料モニター募集を見る →</a>
+                <h3 className="text-xl font-medium">Tagd — アパレル・古着店向けの商品・在庫管理ツール</h3>
+                <p className="mt-4 max-w-2xl text-sm leading-8 text-neutral-300">商品情報・SKU・在庫をまとめて管理し、BASE向けCSV出力まで対応。日々の商品登録やEC出品に伴う手作業を減らすために開発しているWebアプリです。</p>
+                <p className="mt-4 max-w-2xl text-sm leading-8 text-neutral-400">架空の商品データを使った紹介・デモページを公開しています。現在は正式提供前のため、実店舗データを使った運用は開始していません。</p>
+                <div className="mt-6 flex flex-wrap items-center gap-5">
+                  <a href="https://tagd-demo-imayoshi-base.vercel.app/" target="_blank" rel="noopener noreferrer" className={`${button} bg-white text-neutral-950 hover:bg-neutral-200`}>Tagdのデモを見る <span className="sr-only">（新しいタブで開きます）</span><span aria-hidden="true" className="ml-4">↗</span></a>
+                  <a href="/tagd" className={`text-sm underline underline-offset-4 ${focus}`}>Tagdの詳細を見る →</a>
+                </div>
               </div>
             </article>
           </div>
